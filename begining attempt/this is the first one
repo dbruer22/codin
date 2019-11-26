@@ -1,0 +1,48 @@
+Last login: Thu Aug 29 11:27:45 on ttys000
+BSM7LGFWKAIR:~ dbruer22$ cd
+BSM7LGFWKAIR:~ dbruer22$ touch
+usage:
+touch [-A [-][[hh]mm]SS] [-acfhm] [-r file] [-t [[CC]YY]MMDDhhmm[.SS]] file ...
+BSM7LGFWKAIR:~ dbruer22$ mdkir
+-bash: mdkir: command not found
+BSM7LGFWKAIR:~ dbruer22$ DN
+-bash: DN: command not found
+BSM7LGFWKAIR:~ dbruer22$ is
+-bash: is: command not found
+BSM7LGFWKAIR:~ dbruer22$ ls
+Applications				Library
+Creative Cloud Files			Movies
+Creative Cloud Files (archived) (1)	Music
+Desktop					Pictures
+Documents				Public
+Downloads
+BSM7LGFWKAIR:~ dbruer22$ vi
+
+
+
+
+
+
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                              VIM - Vi IMproved                                
+~                                                                               
+~                               version 8.0.1365                                
+~                           by Bram Moolenaar et al.                            
+~                 Vim is open source and freely distributable                   
+~                                                                               
+~                        Help poor children in Uganda!                          
+~                type  :help iccf<Enter>       for information                  
+~                                                                               
+~                type  :q<Enter>               to exit                          
+~                type  :help<Enter>  or  <F1>  for on-line help                 
+~                type  :help version8<Enter>   for version info                 
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+
