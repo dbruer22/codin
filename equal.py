@@ -13,7 +13,7 @@ sensor_pin = 7
 RPL.pinMode(sensor_pin,RPL.INPUT)
 while x == 1:
     reading = RPL.analogRead(sensor_pin)
-    if reading < 50:
+    if reading < 150:
         RPL.servoWrite(1,1400)
-    elif reading >= 50:
+    elif reading >= 150:
         RPL.servoWrite(1,0)
