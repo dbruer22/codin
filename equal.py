@@ -6,7 +6,7 @@ values = []
 
 for i in range(0,100):
    values.append(RPL.analogRead(7))
-   basic = sum(values) / 100
+   basic = ((sum(values) / 100) * -1) + 100
 
 x = 1
 sensor_pin = 7
