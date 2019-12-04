@@ -11,7 +11,7 @@ import setup
 
 x = 1
 sensor_pin = 16
-sensorpin = 0
+sensorpin = 7
 RPL.pinMode(sensor_pin,RPL.INPUT)
 while x == 1:
     an_reading = RPL.analogRead(sensorpin)
