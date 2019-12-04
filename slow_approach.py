@@ -4,9 +4,9 @@ RPL.pinMode(7, RPL.INPUT)
 
 values = []
 
-#for i in range(0,100):
- #  values.append(RPL.analogRead(7))
-  # basic = ((sum(values) / 100) * -1) + 100
+for i in range(0,100):
+   values.append(RPL.analogRead(7))
+   basic = ((sum(values) / 100) * -1) + 100
    #print basic
 
 x = 1
