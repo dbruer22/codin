@@ -15,7 +15,7 @@ RPL.pinMode(sensor_pin,RPL.INPUT)
 while x == 1:
     an_reading = RPL.analogRead(sensor_pin)
     dig_reading = RPL.digitalRead(sensor_pin)
-    print dig_reading
+    #print dig_reading
     #RPL.servoWrite(1, )
     #print reading
     if dig_reading == 1:
