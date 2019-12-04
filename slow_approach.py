@@ -20,7 +20,7 @@ while x == 1:
     #RPL.servoWrite(1, )
     #print reading
     if dig_reading == 1:
-        if an_reading <= 280:
+        if an_reading <= 200:
             RPL.servoWrite(1,1750 - (an_reading / 1))
             RPL.servoWrite(0,1250 + (an_reading / 1))
         elif an_reading >= 280:
