@@ -19,8 +19,18 @@ while x == 1:
     #RPL.servoWrite(1, )
     #print reading
     if dig_reading == 1:
-        RPL.servoWrite(1,1600 - (an_reading))
-        RPL.servoWrite(0,1450 + (an_reading))
+        if an_reading <= 170:
+            RPL.servoWrite(1,1600)
+            RPL.servoWrite(0,1400)
+        elif an_reading <= 200:
+            RPL.servoWrite(1,1550)
+            RPL.servoWrite(0,1450)
+        elif an_reading <= 250:
+            RPL.servoWrite(1,1525)
+            RPL.servoWrite(0,1475)
+        elif an_reading <= 300:
+            RPL.servoWrite(1,1510)
+            RPL.servoWrite(0,1490)
     elif dig_reading == 0:
         RPL.servoWrite(1,0)
         RPL.servoWrite(0,0)
