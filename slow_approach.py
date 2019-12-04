@@ -1,6 +1,6 @@
 import RoboPiLib as RPL
 import setup
-
+import time
 
 #values = []
 
@@ -30,6 +30,7 @@ while x == 1:
         RPL.servoWrite(1,1700 - ((an_reading / 3) - 60))
         RPL.servoWrite(0,1200 + ((an_reading / 3) + 60))
     elif dig_reading == 0:
+        time.sleep(1)
         RPL.servoWrite(1,0)
         RPL.servoWrite(0,0)
 
