@@ -15,6 +15,12 @@ while x == 1:
         if RPL.digitalRead(15) == 1:
             RPL.servoWrite(1,1450)
             RPL.servoWrite(0,1550)
+        elif RPL.digitalRead(15) == 0:
+            RPL.servoWrite(1,1470)
+            RPL.servoWrite(0,1530)
         elif RPL.digitalRead(14) == 1:
+            RPL.servoWrite(1,1550)
+            RPL.servoWrite(0,1450)
+        elif RPL.digitalRead(14) == 0:
             RPL.servoWrite(1,1550)
             RPL.servoWrite(0,1450)
