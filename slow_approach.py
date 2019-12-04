@@ -17,7 +17,7 @@ while x == 1:
     dig_reading = RPL.digitalRead(sensor_pin)
     #print dig_reading
     #RPL.servoWrite(1, )
-    #print reading
+    print an_reading
     if dig_reading == 1:
         if an_reading <= 170:
             RPL.servoWrite(1,1600)
