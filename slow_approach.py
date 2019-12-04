@@ -1,19 +1,20 @@
 import RoboPiLib as RPL
 import setup
-RPL.pinMode(7, RPL.INPUT)
 
-values = []
 
-for i in range(0,100):
-   values.append(RPL.analogRead(7))
-   basic = ((sum(values) / 100) * -1) + 100
+#values = []
+
+#for i in range(0,100):
+ #  values.append(RPL.analogRead(7))
+  # basic = ((sum(values) / 100) * -1) + 100
    #print basic
 
 x = 1
 sensor_pin = 16
+sensorpin = 0
 RPL.pinMode(sensor_pin,RPL.INPUT)
 while x == 1:
-    an_reading = RPL.analogRead(sensor_pin)
+    an_reading = RPL.analogRead(sensorpin)
     dig_reading = RPL.digitalRead(sensor_pin)
     print an_reading
     #RPL.servoWrite(1, )
