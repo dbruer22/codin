@@ -10,7 +10,7 @@ values = []
    #print basic
 
 x = 1
-sensor_pin = 7
+sensor_pin = 16
 RPL.pinMode(sensor_pin,RPL.INPUT)
 while x == 1:
     an_reading = RPL.analogRead(sensor_pin)
