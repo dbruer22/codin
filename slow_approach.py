@@ -18,10 +18,10 @@ while x == 1:
     print dig_reading
     #RPL.servoWrite(1, )
     #print reading
-    if dig_reading == 1:
+    if dig_reading == 0:
         RPL.servoWrite(1,1750 - (an_reading / 3))
         RPL.servoWrite(0,1250 + (an_reading / 3))
-    elif dig_reading == 0:
+    elif dig_reading == 1:
         RPL.servoWrite(1,0)
         RPL.servoWrite(0,0)
 
