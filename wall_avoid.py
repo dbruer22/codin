@@ -12,21 +12,26 @@ def wall_avoid_varibles():
     port_read = RPL.digitalRead(14)
     port_side = 0
     starboard_side = 1
-wall_avoid_varibles()
+
 
 def port_move():
+    wall_avoid_varibles()
     RPL.servoWrite(starboard_side,1450)
     RPL.servoWrite(port_side,1550)
 def starboard_move():
+    wall_avoid_varibles()
     RPL.servoWrite(starboard_side,1550)
     RPL.servoWrite(port_side,1450)
 def stern_move():
+    wall_avoid_varibles()
     RPL.servoWrite(starboard_side,1550)
     RPL.servoWrite(port_side,1450)
 def bow_move():
+    wall_avoid_varibles()
     RPL.servoWrite(1,1700 - ((an_reading / 3) - 55))
     RPL.servoWrite(0,1200 + ((an_reading / 3) + 55))
 def conditions():
+    wall_avoid_varibles()
     if bow_read == 0 and starboard_read == 0 and port_read == 1:
         port_move()
     elif bow_read == 1 and starboard_read == 0 and port_read == 1:
