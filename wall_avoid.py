@@ -3,7 +3,7 @@ import setup
 import time
 def wall_avoid_varibles():
     x = 1
-    RPL.pinMode(sensor_pin,RPL.INPUT)
+    RPL.pinMode(16,RPL.INPUT)
     an_reading = RPL.analogRead(7)
     bow_read = RPL.digitalRead(16)
     starboard_read = RPL.digitalRead(15)
@@ -11,7 +11,7 @@ def wall_avoid_varibles():
     port_side = 0
     starboard_side = 1
     global bow_read, starboard_read, port_read, an_reading, x, port_side, starboard_side
-
+wall_avoid_varibles()
 
 def port_move():
     wall_avoid_varibles()
