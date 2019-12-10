@@ -2,17 +2,18 @@ import RoboPiLib as RPL
 import setup
 import time
 def wall_avoid_varibles():
-    x = 1
-    sensor_pin = 16
-    sensorpin = 7
-    RPL.pinMode(sensor_pin,RPL.INPUT)
-    an_reading = RPL.analogRead(sensorpin)
-    bow_read = RPL.digitalRead(sensor_pin)
-    starboard_read = RPL.digitalRead(15)
-    port_read = RPL.digitalRead(14)
-    port_side = 0
-    starboard_side = 1
-    global bow_read, starboard_read, port_read
+    global
+        x = 1
+        sensor_pin = 16
+        sensorpin = 7
+        RPL.pinMode(sensor_pin,RPL.INPUT)
+        an_reading = RPL.analogRead(sensorpin)
+        bow_read = RPL.digitalRead(sensor_pin)
+        starboard_read = RPL.digitalRead(15)
+        port_read = RPL.digitalRead(14)
+        port_side = 0
+        starboard_side = 1
+    #global bow_read, starboard_read, port_read
 
 
 def port_move():
