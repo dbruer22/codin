@@ -12,7 +12,7 @@ def wall_avoid_varibles():
     port_read = RPL.digitalRead(14)
     port_side = 0
     starboard_side = 1
-    global bow_read
+    global bow_read, starboard_read
 
 
 def port_move():
