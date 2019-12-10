@@ -43,6 +43,8 @@ def conditions():
         bow_move()
     elif bow_read == 0 and starboard_read == 0 and port_read == 0:
         bow_move()
+    elif bow_read == 1 and starboard_read == 1 and port_read == 1:
+        bow_move()
     #else:
     #    stern_move()
 conditions()
