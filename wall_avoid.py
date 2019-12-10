@@ -15,16 +15,16 @@ wall_avoid_varibles()
 
 def port_move():
     wall_avoid_varibles()
-    RPL.servoWrite(starboard_side,1450)
+    RPL.servoWrite(starboard_side,1550)
     RPL.servoWrite(port_side,1550)
 def starboard_move():
     wall_avoid_varibles()
-    RPL.servoWrite(starboard_side,1550)
+    RPL.servoWrite(starboard_side,1450)
     RPL.servoWrite(port_side,1450)
 def stern_move():
     wall_avoid_varibles()
-    RPL.servoWrite(starboard_side,1550)
-    RPL.servoWrite(port_side,1450)
+    RPL.servoWrite(starboard_side,1450)
+    RPL.servoWrite(port_side,1550)
 def bow_move():
     wall_avoid_varibles()
     RPL.servoWrite(1,1700 - ((an_reading / 3) - 55))
