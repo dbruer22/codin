@@ -24,7 +24,7 @@ def starboard_move():
 def stern_move():
     wall_avoid_varibles()
     RPL.servoWrite(starboard_side,1450)
-    RPL.servoWrite(port_side,1550)
+    RPL.servoWrite(port_side,150)
 def bow_move():
     wall_avoid_varibles()
     RPL.servoWrite(1,1700 - ((an_reading / 3) - 55))
@@ -43,8 +43,8 @@ def conditions():
         bow_move()
     elif bow_read == 0 and starboard_read == 0 and port_read == 0:
         bow_move()
-    else:
-        stern_move()
+    #else:
+    #    stern_move()
 conditions()
     #elif bow_read == 0 and starboard_read == 1 and port_read == 0:
     #    bow_move()
