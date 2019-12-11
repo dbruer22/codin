@@ -17,4 +17,5 @@ def conditions():
     elif starboardan_read >= 350 and portan_read < 350:
         RPL.servoWrite(1,1450)
         RPL.servoWrite(0,1450)
+    print portan_read
 conditions()
