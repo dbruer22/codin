@@ -7,9 +7,9 @@ starboardan_read = RPL.analogRead(6)
 def conditions():
     x = 1
     while x == 1:
-         portan_read = RPL.analogRead(5)
-         bowan_read = RPL.analogRead(7)
-         starboardan_read = RPL.analogRead(6)
+        portan_read = RPL.analogRead(5)
+        bowan_read = RPL.analogRead(7)
+        starboardan_read = RPL.analogRead(6)
         if portan_read <= 350 and starboardan_read <= 350:
             RPL.servoWrite(1,1400)
             RPL.servoWrite(0,1600)
