@@ -18,4 +18,5 @@ def conditions():
         RPL.servoWrite(1,1450)
         RPL.servoWrite(0,1450)
     print portan_read
+    print starboardan_read
 conditions()
