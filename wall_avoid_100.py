@@ -5,20 +5,20 @@ bowan_read = RPL.analogRead(7)
 starboardan_read = RPL.analogRead(6)
 
 def port_turn():
-    RPL.servoWrite(1,1600)
-    RPL.servoWrite(0,1560)
+    RPL.servoWrite(1,1550)
+    RPL.servoWrite(0,1550)
 
 def star_turn():
-    RPL.servoWrite(1,1440)
-    RPL.servoWrite(0,1400)
+    RPL.servoWrite(1,1450)
+    RPL.servoWrite(0,1450)
 
 def bow_move():
-    RPL.servoWrite(1,1400)
-    RPL.servoWrite(0,1600)
+    RPL.servoWrite(1,1450)
+    RPL.servoWrite(0,1550)
 
 def stern_move():
-    RPL.servoWrite(1,1600)
-    RPL.servoWrite(0,1400)
+    RPL.servoWrite(1,1550)
+    RPL.servoWrite(0,1450)
 
 def conditions():
     x = 1
