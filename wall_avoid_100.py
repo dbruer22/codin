@@ -13,12 +13,12 @@ def star_turn():
     RPL.servoWrite(0,1430)
 
 def bow_move():
-    RPL.servoWrite(1,1450)
-    RPL.servoWrite(0,1550)
+    RPL.servoWrite(1,1400)
+    RPL.servoWrite(0,1600)
 
 def stern_move():
-    RPL.servoWrite(1,1550)
-    RPL.servoWrite(0,1450)
+    RPL.servoWrite(1,1600)
+    RPL.servoWrite(0,1400)
 
 def conditions():
     x = 1
