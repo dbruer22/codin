@@ -34,6 +34,6 @@ def conditions():
             star_turn()
         elif starboardan_read >= 350 and portan_read <= 349:
             port_turn()
-        #print portan_read
-        #print starboardan_read
+        print portan_read
+        print starboardan_read
 conditions()
