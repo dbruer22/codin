@@ -10,6 +10,7 @@ while x == 1:
     an_reading = RPL.analogRead(7)
     dig_reading = RPL.digitalRead(sensor_pin)
     print dig_reading
+    print an_reading
     if dig_reading == 1:
         time.sleep(.3)
         RPL.servoWrite(1,1700 - ((an_reading / 3) - 55))
