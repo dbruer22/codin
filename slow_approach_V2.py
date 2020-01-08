@@ -10,10 +10,10 @@ values = []
    #print basic
 
 x = 1
-sensor_pin = 16
+sensor_pin = 15
 RPL.pinMode(sensor_pin,RPL.INPUT)
 while x == 1:
-    an_reading = RPL.analogRead(sensor_pin)
+    an_reading = RPL.analogRead(7)
     dig_reading = RPL.digitalRead(sensor_pin)
     #print dig_reading
     #RPL.servoWrite(1, )
