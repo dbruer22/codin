@@ -9,8 +9,8 @@ def port_turn():
     RPL.servoWrite(0,1450)
 
 def star_turn():
-    RPL.servoWrite(1,1450)
-    RPL.servoWrite(0,1600)
+    RPL.servoWrite(1,1400)
+    RPL.servoWrite(0,1550)
 
 def bow_move():
     RPL.servoWrite(1,1400)
