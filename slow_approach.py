@@ -2,8 +2,8 @@ import RoboPiLib as RPL
 import setup
 import time
 x = 1
-sensor_pin = 16
-an_sensorpin = 0
+sensor_pin = 15
+an_sensorpin = 7
 RPL.pinMode(sensor_pin,RPL.INPUT)
 while x == 1:
     an_reading = RPL.analogRead(an_sensorpin)
