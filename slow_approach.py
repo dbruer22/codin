@@ -6,8 +6,9 @@ sensor_pin = 15
 an_sensorpin = 7
 RPL.pinMode(sensor_pin,RPL.INPUT)
 while x == 1:
-    an_reading = RPL.analogRead(an_sensorpin)
+    an_reading = RPL.analogRead(7)
     dig_reading = RPL.digitalRead(sensor_pin)
+    print dig_reading
     if dig_reading == 1:
         RPL.servoWrite(1,1700 - ((an_reading / 3) - 55))
         RPL.servoWrite(0,1200 + ((an_reading / 3) + 55))
