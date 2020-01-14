@@ -1,5 +1,6 @@
 import RoboPiLib as RPL
 import setup
+import time
 RPL.pinMode(7, RPL.INPUT)
 
 values = []
@@ -13,7 +14,7 @@ x = 1
 sensor_pin = 17
 RPL.pinMode(sensor_pin,RPL.INPUT)
 while x == 1:
-
+    time.sleep(.3)
     an_reading = RPL.analogRead(7)
     dig_reading = RPL.digitalRead(sensor_pin)
     #RPL.servoWrite(1, )
