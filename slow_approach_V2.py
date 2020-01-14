@@ -18,23 +18,27 @@ while x == 1:
     dig_reading = RPL.digitalRead(sensor_pin)
     #RPL.servoWrite(1, )
     #print an_reading
-    print dig_reading
-    if dig_reading == 1:
-        if an_reading <= 170:
-            RPL.servoWrite(1,1600)
-            RPL.servoWrite(0,1400)
-        elif an_reading <= 200:
-            RPL.servoWrite(1,1550)
-            RPL.servoWrite(0,1450)
-        elif an_reading <= 250:
-            RPL.servoWrite(1,1525)
-            RPL.servoWrite(0,1475)
-        elif an_reading <= 300:
-            RPL.servoWrite(1,1510)
-            RPL.servoWrite(0,1490)
-    elif dig_reading == 0:
+    #print dig_reading
+    #if dig_reading == 1:
+    if an_reading <= 170:
+        RPL.servoWrite(1,1600)
+        RPL.servoWrite(0,1400)
+    elif an_reading <= 200:
+        RPL.servoWrite(1,1550)
+        RPL.servoWrite(0,1450)
+    elif an_reading <= 250:
+        RPL.servoWrite(1,1525)
+        RPL.servoWrite(0,1475)
+    elif an_reading <= 300:
+        RPL.servoWrite(1,1510)
+        RPL.servoWrite(0,1490)
+    elif an_reading <= 400:
         RPL.servoWrite(1,0)
         RPL.servoWrite(0,0)
+
+    #elif dig_reading == 0:
+        #RPL.servoWrite(1,0)
+        #RPL.servoWrite(0,0)
 
     #if reading < 150:
         #RPL.servoWrite(1,1600)
