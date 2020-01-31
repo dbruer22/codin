@@ -1,11 +1,11 @@
-import RoboPiLib_pwm as RPL
+import RoboPiLib as RPL
 import setup
 
 pul_pin = 4       #Your pin #
 dir_pin = 5       #Your pin #
 
 direction = 0     #can be 0 or 1
-speed = 15000      #smaller = faster
+speed = 5000      #smaller = faster
 
 RPL.pinMode(pul_pin,RPL.PWM)
 RPL.pinMode(dir_pin,RPL.OUTPUT)

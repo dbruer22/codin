@@ -12,3 +12,4 @@ RPL.pinMode(dir_pin,RPL.OUTPUT)
 
 RPL.digitalWrite(dir_pin,direction) #sets the motor to forwards or backwards
 RPL.pwmWrite(pul_pin,speed,speed*2) #moves the motor
+ 
