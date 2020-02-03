@@ -1,0 +1,47 @@
+Last login: Thu Aug 29 08:23:59 on ttys000
+BSM7LGFWKAIR:~ dbruer22$ cd
+BSM7LGFWKAIR:~ dbruer22$ cd
+BSM7LGFWKAIR:~ dbruer22$ Is
+-bash: Is: command not found
+BSM7LGFWKAIR:~ dbruer22$ co
+-bash: co: command not found
+BSM7LGFWKAIR:~ dbruer22$ cp
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+BSM7LGFWKAIR:~ dbruer22$ mv
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+BSM7LGFWKAIR:~ dbruer22$ rm
+usage: rm [-f | -i] [-dPRrvW] file ...
+       unlink file
+BSM7LGFWKAIR:~ dbruer22$ mkdir
+usage: mkdir [-pv] [-m mode] directory ...
+BSM7LGFWKAIR:~ dbruer22$ touch
+usage:
+touch [-A [-][[hh]mm]SS] [-acfhm] [-r file] [-t [[CC]YY]MMDDhhmm[.SS]] file ...
+BSM7LGFWKAIR:~ dbruer22$ vi
+
+from datetime import datetime
+now = datetime.now()
+print "%02d" % (now.day)y
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
