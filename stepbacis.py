@@ -1,5 +1,4 @@
-import RoboPiLib as RPL
-import RoboPiLib_pwm
+import RoboPiLib_mix as RPL
 import setup
 
 pul_pin = 1       #Your pin #
