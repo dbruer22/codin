@@ -47,7 +47,7 @@ def elbow(dir, run_for = 1, speed = speed):
   RPL.pwmWrite(elbow_pul, speed, speed * 2)
   time.sleep(run_for)
   stop()
-elbow(1)
+elbow(0)
 #speed needs to be constant at 500 for this factor
 #pulse/rev also needs to be constant at 200
 def wristRotateClockwise():
