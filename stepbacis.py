@@ -1,5 +1,5 @@
 import RoboPiLib_pwm as RPL
-import setup
+
 
 pul_pin = 1       #Your pin #
 dir_pin = 2       #Your pin #
