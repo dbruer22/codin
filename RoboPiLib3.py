@@ -99,7 +99,7 @@ def putPacket(cmd, buffr, plen):
   packet.append(chk&255)
   packet.append(EOT)
 
-  ser.write(packet)
+  #ser.write(packet)
 
 def getPacket():
 
@@ -121,9 +121,9 @@ def getPacket():
 
   buf2 = bytearray()
   for i in range(0, plen):
-    byt = ser.read(1)[0]  
+    byt = ser.read(1)[0]
     buf2.append(byt)
-    checksum += byt 
+    checksum += byt
 
   chk = ser.read(1)[0]
 
@@ -132,8 +132,8 @@ def getPacket():
 
   while (ser.read(1)[0] != EOT):
     count = count+1
-    
-#  print "Dropped ", count    
+
+#  print "Dropped ", count
 
   #          0    1     2     3    4
   return [addr, cmd, plen, buf2, chk]
@@ -150,12 +150,12 @@ def getPacket():
 
 def RoboPiReset(pin): # pin is 17 on a Pi
 #  pi3 = pigpio.pi()
-  time.sleep(0.1)   
+  time.sleep(0.1)
 #  pi3.set_mode(pin, pigpio.OUTPUT)
 #  pi3.write(pin,0)
 #  time.sleep(0.01)
 #  pi3.write(pin,1)
-#  time.sleep(0.5) 
+#  time.sleep(0.5)
 #  pi3.stop()
 
 #**********************************************************************************
@@ -215,7 +215,7 @@ def pinMode(pin, mode):
 def readMode(pin):
   putPacket(READMODE, bytearray([pin]), 1)
   buff = getPacket()
-  return buff[3][1] 
+  return buff[3][1]
 
 #**********************************************************************************
 
@@ -228,7 +228,7 @@ def digitalWrite(pin, val):
 def digitalRead(pin):
   putPacket(DIGREAD, bytearray([pin]), 1)
   buff = getPacket()
-  return buff[3][1] 
+  return buff[3][1]
 
 #**********************************************************************************
 
@@ -260,7 +260,7 @@ def servoWrite(pin, val):
 
 def pwmWrite(pin, pulse, period):
   if pulse < 0:
-    pulse = 0  
+    pulse = 0
   if pulse >= period:
     pulse = 0
     digitalWrite(pin,1)
@@ -291,7 +291,7 @@ def w2ba(x):
 def wl2ba(lst):
   cl = w2ba(lst[0])
   for ix in range(1,len(lst)):
-    cl = cl + w2ba(lst[ix])   
+    cl = cl + w2ba(lst[ix])
   return cl
 
 def pba(a):
@@ -303,26 +303,26 @@ def pba(a):
 def pulseGen(pin, dbg, stp, low_period, pls, pulse_list):
   putPacket(PULSEGEN, bytearray([pin,dbg,stp,pls])+w2ba(low_period)+wl2ba(pulse_list),pls+pls+6)
   buff = getPacket()
-  return buff[3][0] 
+  return buff[3][0]
 
 #**********************************************************************************
 
 def pulseList(pin, low_period, pulse_list):
   return pulseGen(pin, 33, 33, low_period, len(pulse_list), pulse_list)
-  
+
 #**********************************************************************************
 
 def pulseStop():
   putPacket(PULSESTOP,bytearray([0]),1)
   buff = getPacket()
-  return buff[3][0] 
+  return buff[3][0]
 
 
 #**********************************************************************************
 
 def pwmWrite(pin, pulse, period):
   if pulse < 0:
-    pulse = 0  
+    pulse = 0
   if pulse >= period:
     pulse = 0
     digitalWrite(pin,1)
@@ -353,7 +353,7 @@ def w2ba(x):
 def wl2ba(lst):
   cl = w2ba(lst[0])
   for ix in range(1,len(lst)):
-    cl = cl + w2ba(lst[ix])   
+    cl = cl + w2ba(lst[ix])
   return cl
 
 def pba(a):
@@ -365,17 +365,16 @@ def pba(a):
 def pulseGen(pin, dbg, stp, low_period, pls, pulse_list):
   putPacket(PULSEGEN, bytearray([pin,dbg,stp,pls])+w2ba(low_period)+wl2ba(pulse_list),pls+pls+6)
   buff = getPacket()
-  return buff[3][0] 
+  return buff[3][0]
 
 #**********************************************************************************
 
 def pulseList(pin, low_period, pulse_list):
   return pulseGen(pin, 33, 33, low_period, len(pulse_list), pulse_list)
-  
+
 #**********************************************************************************
 
 def pulseStop():
   putPacket(PULSESTOP,bytearray([0]),1)
   buff = getPacket()
-  return buff[3][0] 
-
+  return buff[3][0]
