@@ -99,7 +99,7 @@ def putPacket(cmd, buffr, plen):
   packet.append(chk&255)
   packet.append(EOT)
 
-  #ser.write(packet)
+  ser.write(packet)
 
 def getPacket():
 
