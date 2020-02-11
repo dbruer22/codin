@@ -1,4 +1,5 @@
-import RoboPiLib3 as RPL
+# import RoboPiLib3 as RPL
+import RoboPiLib_pwm as RPL
 import setup
 import math
 
