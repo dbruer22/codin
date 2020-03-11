@@ -1,3 +1,3 @@
 import RoboPiLib as RPL
 import setup
-RPL.servoWrite(0, 10000)
+RPL.servoWrite(1, 10000)
