@@ -4,5 +4,5 @@ import setup
 clockwise = 0
 counter = 1
 
-RPL.digitalWrite(2,direction)
+RPL.digitalWrite(2,counter)
 RPL.servoWrite(2,20000)
