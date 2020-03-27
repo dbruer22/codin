@@ -263,7 +263,7 @@ def pwmWrite(pin, pulse, period):
   puls = pulse/5
   perio = period/5
   putPacket(PWMWRITE, bytearray([pin, puls & 255, puls >> 8, perio & 255, perio >> 8]), 5)
-  print getPacket()
+  getPacket()
 
 #**********************************************************************************
 
