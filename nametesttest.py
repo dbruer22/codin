@@ -30,7 +30,7 @@ def number_per_character():
 number_per_character()
 
 def adder():
-    cool = [x for x in no_neg_with_comma if x >= -20 ]
+    cool = [x + 1 for x in no_neg_with_comma if x >= -20 ]
     print cool
 adder()
 
@@ -52,12 +52,13 @@ def name_splitter():
     sublist(no_neg_with_comma)
 name_splitter()
 
+
 def small_list():
     x = 0
     mini_test = []
-    while x <= 6500 - 1:
+    while x <= 5 - 1:
         x += 1
-        for i in range(1,30): # (_,+1 positioner_up_one number) ex 14,13
+        for i in range(1,8): # (_,+1 positioner_up_one number) ex 14,13
             mini_test.insert(i, x)
             #makes one massive list containing 6 copys of each number decending from 5000
             mini_test.sort() #reverses the order from 5000 ... 1 to 1 ... 5000
@@ -70,7 +71,7 @@ def listSplit():
 
     y = 1
     positioner_up_one = 0
-    amount_of_seperators = 4*(8000)
+    amount_of_seperators = 4*(1)
     #print positioner #test
     while positioner_up_one <= (amount_of_seperators * 7) - 1:
         step_compensator += 0
@@ -79,7 +80,7 @@ def listSplit():
         positioner = positioner_up_one -1
        #print positioner #test
         mini_test.insert(positioner,-10)
-        print mini_test # test
+        #print mini_test # test
     def sublist(somelist):
         split = []
         r = []
@@ -106,5 +107,5 @@ def multipier():
             output.append(a*b)
     print output
     answer = sum(output)
-    #print answer
+    print answer
 multipier()
