@@ -1,21 +1,22 @@
 
 import RoboPiLib as RPL
 import setup
+import direction
 
 print('Type "stop" to stop the motors and then type "exit" to close the program')
 
 while True:
-    usrin = input(' ')
+usrin = input(' ')
 
 if usrin == 'w':
- print('please input a w,a,s,d,stop,exit')
+  direction.front()
 elif usrin == 's':
- print('please input a w,a,s,d,stop,exit')
+  direction.back()
 elif usrin == 'a':
- print('please input a w,a,s,d,stop,exit')
+  direction.left()
 elif usrin == 'd':
- print('please input a w,a,s,d,stop,exit')
+  direction.right()
 elif usrin == 'stop':
- print('please input a w,a,s,d,stop,exit')
+  direction.stop
 else:
   print('please input a w,a,s,d,stop,exit')
