@@ -1,6 +1,6 @@
 import RoboPiLib as RPL
 import setup
-
+w = 'w'
 while True:
   usrin = input()
 
