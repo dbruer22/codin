@@ -5,7 +5,7 @@ import setup
 print('Type "stop" to stop the motors and then type "exit" to close the program')
 
 while True:
-usrin = input(' ')
+    usrin = input(' ')
 
 if usrin == 'w':
  print('please input a w,a,s,d,stop,exit')
