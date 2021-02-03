@@ -26,13 +26,6 @@ except:
 ######################
 ## Individual commands
 ######################
-def stopAll():
-  try:
-    RPL.servoWrite(motorL,400)
-    RPL.servoWrite(motorR,400)
-  except:
-    print "error except"
-    pass
 
 def forward():
   RPL.servoWrite(motorL,motorL_forward)
@@ -117,6 +110,14 @@ def forwardSpeedChangeReset():
     global motorL_forward
     motorR_forward = 1000
     print_speed()
+
+def stopAll():
+  try:
+    RPL.servoWrite(motorL,400)
+    RPL.servoWrite(motorR,motorR_forward)
+  except:
+    print "error except"
+    pass
 
 
 fd = sys.stdin.fileno() # I don't know what this does
