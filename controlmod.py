@@ -33,7 +33,7 @@ def forward():
 
 def reverse():
   RPL.servoWrite(motorL,motorL_backward)
-  RPL.servoWrite(motorR,motorR_backward)
+  RPL.servoWrite(motorR,motorR_forward)
 
 def right():
   RPL.servoWrite(motorL,1460)#motorL_forward)
