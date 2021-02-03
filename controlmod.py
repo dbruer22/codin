@@ -145,7 +145,7 @@ while True:
     break # this ends the loop
   else:
     if ch == 'w':
-      forwardSpeedChanges(1)
+      forwardSpeedChanges(10)
       forward()
     elif ch == "a":
       left()
