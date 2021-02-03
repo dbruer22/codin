@@ -112,6 +112,13 @@ def forwardLeftSpeedChange(change, mn = 1600, mx = 2900):
   motorL_forward = max(min(motorL_forward, mx), mn)
   print_speed()
 
+def forwardSpeedChangeReset():
+    global motorR_forward
+    global motorL_forward
+    motorR_forward = 1000
+    print_speed()
+
+
 fd = sys.stdin.fileno() # I don't know what this does
 old_settings = termios.tcgetattr(fd) # this records the existing console settings that are later changed with the tty.setraw... line so that they can be replaced when the loop ends
 
@@ -142,6 +149,7 @@ while True:
       forward()
     elif ch == "a":
       left()
+      forwardSpeedChangeReset()
     elif ch == "s":
       reverse()
     elif ch == "d":
