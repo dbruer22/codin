@@ -28,8 +28,8 @@ except:
 ######################
 def stopAll():
   try:
-    RPL.servoWrite(motorL,1500)
-    RPL.servoWrite(motorR,1500)
+    RPL.servoWrite(motorL,400)
+    RPL.servoWrite(motorR,400)
   except:
     print "error except"
     pass
