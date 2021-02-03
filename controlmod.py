@@ -63,7 +63,7 @@ def print_speed():
   print '--FORWARD: Left Motor: ', motorL_forward, ' Right Motor: ', motorR_forward, '\r'
   print '  BACKWARD: Left Motor: ', motorR_backward, ' Right Motor: ', motorL_backward, '\r'
 
-def forwardSpeedChanges(change, mn = 1600, mx = 2900):
+def forwardSpeedChanges(change, mn = 400, mx = 2300):
   global motorR_forward
   global motorL_forward
   motorR_forward += change
@@ -152,7 +152,7 @@ while True:
       left()
       forwardSpeedChangeReset()
     elif ch == "s":
-      forwardSpeedChanges(-10)    
+      forwardSpeedChanges(-10)
       reverse()
     elif ch == "d":
       right()
