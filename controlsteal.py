@@ -36,11 +36,11 @@ def stopAll():
 
 def forward():
   RPL.servoWrite(motorL,motorL_forward)
-  RPL.servoWrite(motorR,motorR_forward)
+  RPL.servoWrite(motorR,2300)
 
 def reverse():
   RPL.servoWrite(motorL,motorL_backward)
-  RPL.servoWrite(motorR,motorR_backward)
+  RPL.servoWrite(motorR,400)
 
 def right():
   RPL.servoWrite(motorL,1460)#motorL_forward)
