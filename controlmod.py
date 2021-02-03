@@ -152,6 +152,7 @@ while True:
       left()
       forwardSpeedChangeReset()
     elif ch == "s":
+      forwardSpeedChanges(-10)    
       reverse()
     elif ch == "d":
       right()
