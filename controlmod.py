@@ -10,7 +10,7 @@ import sys, tty, termios, signal
 motorL = 0
 motorR = 1
 
-motorR_forward = 2000
+motorR_forward = 1000
 motorR_backward = 1000
 motorL_forward = 1000
 motorL_backward = 2000
@@ -138,7 +138,7 @@ while True:
     break # this ends the loop
   else:
     if ch == 'w':
-    
+      forwardSpeedChanges(100)
       forward()
     elif ch == "a":
       left()
