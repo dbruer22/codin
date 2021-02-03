@@ -146,13 +146,13 @@ while True:
     break # this ends the loop
   else:
     if ch == 'w':
-      forwardSpeedChanges(10)
+      forwardSpeedChanges(40)
       forward()
     elif ch == "a":
       left()
       forwardSpeedChangeReset()
     elif ch == "s":
-      forwardSpeedChanges(-10)
+      forwardSpeedChanges(-40)
       reverse()
     elif ch == "d":
       right()
