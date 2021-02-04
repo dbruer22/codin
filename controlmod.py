@@ -154,39 +154,5 @@ while True:
     elif ch == "s":
       forwardSpeedChanges(-60)
       reverse()
-    elif ch == "d":
-      right()
-    elif ch == "e":
-      forward_right()
-    elif ch == "q":
-      forward_left()
-    elif ch == "z":
-      backward_left()
-    elif ch == "c":
-      backward_right()
-    elif ch == "]":
-      forwardSpeedChanges(100)
-    elif ch == "[":
-      backwardSpeedChanges(-100)
-    elif ch == "}":
-      forwardSpeedChanges(-100)
-    elif ch == "{":
-      backwardSpeedChanges(100)
-    elif ch == "1":
-      forwardLeftSpeedChange(100)
-    elif ch == "!":
-      forwardLeftSpeedChange(-100)
-    elif ch == "2":
-      forwardRightSpeedChange(100)
-    elif ch == "@":
-      forwardRightSpeedChange(-100)
-    elif ch == "3":
-      backwardLeftSpeedChange(-100)
-    elif ch == "#":
-      backwardLeftSpeedChange(100)
-    elif ch == "4":
-      backwardRightSpeedChange(-100)
-    elif ch == "$":
-      backwardRightSpeedChange(100)
     else:
       stopAll()
