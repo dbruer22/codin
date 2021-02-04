@@ -92,7 +92,6 @@ while True:
       forwardSpeedChanges(60)
       forward()
     elif ch == "a":
-      left()
       forwardSpeedChangeReset()
     elif ch == "s":
       forwardSpeedChanges(-60)
