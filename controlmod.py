@@ -60,7 +60,7 @@ def print_motor():
 def motorchange(change, mn = 0, mx = 5):
   global motorR
   motorR = change
-  motorR = max(min(motorR_forward, mx), mn)
+
   print_motor()
 
 def stopAll():
