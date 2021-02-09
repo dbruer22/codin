@@ -54,6 +54,15 @@ def forwardSpeedChangeReset():
     motorR_forward = 1000
     print_speed()
 
+def print_motor():
+    print motorR
+
+def forwardSpeedChanges(change, mn = 0, mx = 5):
+  global motorR_forward
+  motorR += change
+  motorR = max(min(motorR_forward, mx), mn)
+  print_motor()
+
 def stopAll():
   try:
     RPL.servoWrite(motorL,400)
