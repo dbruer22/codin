@@ -101,6 +101,7 @@ while True:
       forwardSpeedChanges(60)
       forward()
     elif ch == "a":
+      motorchange(3)     
       forwardSpeedChangeReset()
     elif ch == "s":
       forwardSpeedChanges(-60)
