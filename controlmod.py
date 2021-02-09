@@ -58,7 +58,7 @@ def print_motor():
     print motorR
 
 def motorchange(change, mn = 0, mx = 5):
-  global motorR_forward
+  global motorR
   motorR += change
   motorR = max(min(motorR_forward, mx), mn)
   print_motor()
@@ -101,7 +101,7 @@ while True:
       forwardSpeedChanges(60)
       forward()
     elif ch == "a":
-      motorchange(3)     
+      motorchange(3)
       forwardSpeedChangeReset()
     elif ch == "s":
       forwardSpeedChanges(-60)
