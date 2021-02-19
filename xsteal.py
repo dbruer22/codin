@@ -26,12 +26,12 @@
 
 from bsmLib.controller import controller
 from bsmLib.networking import tcpClient
-import argv
+from sys import argv
 
 #### Global Variables ####
 DEADZONE = .2 # Controller deadzone
 
-HOST = sys.argv[1]
+HOST = argv[1]
 PORT = 10000
 
 
