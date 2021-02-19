@@ -31,7 +31,7 @@ from sys import argv
 #### Global Variables ####
 DEADZONE = .2 # Controller deadzone
 
-HOST = argv[1]
+HOST = sys.argv[1]
 PORT = 10000
 
 
