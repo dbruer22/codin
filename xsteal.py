@@ -26,7 +26,7 @@
 
 from bsmLib.controller import controller
 from bsmLib.networking import tcpClient
-from sys import argv
+import argv
 
 #### Global Variables ####
 DEADZONE = .2 # Controller deadzone
