@@ -2,7 +2,7 @@ import pygame
 
 pygame.init()
 
-j = pygame.joystick.Joystick(0)
+j = pygame.Joystick(0)
 j.init()
 
 try:
