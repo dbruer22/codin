@@ -1,6 +1,7 @@
 import pygame
 
 pygame.init()
+pygame.display.init()
 
 j = pygame.joystick.Joystick(0)
 j.init()
