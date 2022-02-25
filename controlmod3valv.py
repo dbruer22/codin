@@ -24,8 +24,8 @@ try:
   RPL.servoWrite(motorL,1500)
   RPL.pinMode(motorR,RPL.SERVO)
   RPL.servoWrite(motorR,1500)
-  #RPL.pinMode(motorZ,RPL.SERVO)
-  #RPL.servoWrite(motorZ,1500)
+  RPL.pinMode(motorZ,RPL.SERVO)
+  RPL.servoWrite(motorZ,1500)
 except:
   pass
 
