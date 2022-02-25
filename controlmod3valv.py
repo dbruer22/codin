@@ -43,9 +43,8 @@ def forward():
       RPL.servoWrite(motorR,motorZ_forward)
 
 def reverse():
-    global mortorR
-
-  RPL.servoWrite(motorR,motorR_forward)
+   global mortorR
+   RPL.servoWrite(motorR,motorR_forward)
 
 def print_speed():
   print '--FORWARD: Left Motor: ', motorL_forward, ' Right Motor: ', motorR_forward, '\r'
