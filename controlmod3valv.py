@@ -69,12 +69,15 @@ def forwardSpeedChanges(change, mn = 400, mx = 2300):
   global motorR_forward
   global motorL_forward
   if mortorR == 1:
+      global mortorR
       motorR_forward += change
       motorR_forward = max(min(motorR_forward, mx), mn)
   elif mortorR == 2:
+      global mortorR
       motorL_forward += change
       motorL_forward = max(min(motorL_forward, mx), mn)
   elif mortorR == 3:
+      global mortorR
       motorZ_forward += change
       motorZ_forward = max(min(motorZ_forward, mx), mn)
   print_speed()
