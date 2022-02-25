@@ -34,7 +34,7 @@ except:
 ######################
 
 def forward():
-    global mortorR
+  global mortorR
   if mortorR == 1:
       RPL.servoWrite(motorR,motorR_forward)
   elif mortorR == 2:
