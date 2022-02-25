@@ -34,19 +34,19 @@ except:
 ######################
 
 def forward():
-  global mortorR
+  global motorR
   global motorR_forward
   global motorL_forward
   global motorZ_forward
-  if mortorR == 1:
+  if motorR == 1:
       RPL.servoWrite(motorR,motorR_forward)
-  elif mortorR == 2:
+  elif motorR == 2:
       RPL.servoWrite(motorR,motorL_forward)
-  elif mortorR == 3:
+  elif motorR == 3:
       RPL.servoWrite(motorR,motorZ_forward)
 
 def reverse():
-   global mortorR
+   global motorR
    RPL.servoWrite(motorR,motorR_forward)
 
 def print_speed():
@@ -65,19 +65,16 @@ def print_speed():
 #  print_speed()
 
 def forwardSpeedChanges(change, mn = 400, mx = 2300):
-  global mortorR
+  global motorR
   global motorR_forward
   global motorL_forward
-  if mortorR == 1:
-      global mortorR
+  if motorR == 1:
       motorR_forward += change
       motorR_forward = max(min(motorR_forward, mx), mn)
-  elif mortorR == 2:
-      global mortorR
+  elif motorR == 2:
       motorL_forward += change
       motorL_forward = max(min(motorL_forward, mx), mn)
-  elif mortorR == 3:
-      global mortorR
+  elif motorR == 3:
       motorZ_forward += change
       motorZ_forward = max(min(motorZ_forward, mx), mn)
   print_speed()
