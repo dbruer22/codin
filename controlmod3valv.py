@@ -35,6 +35,9 @@ except:
 
 def forward():
   global mortorR
+  global motorR_forward
+  global motorL_forward
+  global motorZ_forward
   if mortorR == 1:
       RPL.servoWrite(motorR,motorR_forward)
   elif mortorR == 2:
@@ -62,6 +65,7 @@ def print_speed():
 #  print_speed()
 
 def forwardSpeedChanges(change, mn = 400, mx = 2300):
+  global mortorR
   global motorR_forward
   global motorL_forward
   if mortorR == 1:
