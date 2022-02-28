@@ -44,8 +44,8 @@ def forwardSpeedChanges(change, mn = 1400, mx = 1600):
   global motorL_forward
   motorR_forward += change
   motorL_forward += change
-  motorR_forward = max(min(motorR_forward, mx), mn)
   motorL_forward = max(min(motorL_forward, mx), mn)
+  motorR_forward = max(min(motorR_forward, mx), mn)
   print_speed()
 
 def forwardSpeedChangeReset():
