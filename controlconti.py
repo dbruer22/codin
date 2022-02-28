@@ -102,7 +102,7 @@ while True:
       while ch == 'a':
           forwardSpeedChanges(200)
           forward()
-      break
+          break
       motorR_forward = 0
     elif ch == "r":
       motorR_forward = 0
@@ -110,7 +110,7 @@ while True:
      while ch == 'd':
          forwardSpeedChanges(-200)
          forward()
-     break
+         break
      motorR_forward = 0
 
     elif ch == "1":
