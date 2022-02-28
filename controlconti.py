@@ -107,8 +107,8 @@ while True:
     elif ch == "r":
       forwardSpeedChangeReset()
     elif ch == "d":
-     while ch == 'a':
-         forwardSpeedChanges(2000)
+     while ch == 'd':
+         forwardSpeedChanges(-2000)
          forward()
          break
      motorR_forward = 0
