@@ -10,7 +10,7 @@ import sys, tty, termios, signal
 motorL = 0
 motorR = 1
 
-motorR_forward = 0
+motorR_forward = 1500
 motorR_backward = 1000
 motorL_forward = 1000
 motorL_backward = 2000
