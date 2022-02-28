@@ -97,9 +97,13 @@ while True:
     termios.tcsetattr(fd, termios.TCSADRAIN, old_settings) # this resets the console settings
     break # this ends the loop
   else:
+    global motorR_forward
     if ch == 'a':
-      forwardSpeedChanges(2000)
-      forward()
+      while ch == 'a':
+          forwardSpeedChanges(2000)
+          forward()
+          break
+      motorR_forward = 0
     elif ch == "r":
       forwardSpeedChangeReset()
     elif ch == "d":
