@@ -10,7 +10,7 @@ import sys, tty, termios, signal
 motorL = 0
 motorR = 1
 
-motorR_forward = 1500
+motorR_forward = 1000
 motorR_backward = 1000
 motorL_forward = 1000
 motorL_backward = 2000
@@ -39,7 +39,7 @@ def print_speed():
   print '--FORWARD: Left Motor: ', motorL_forward, ' Right Motor: ', motorR_forward, '\r'
   print '  BACKWARD: Left Motor: ', motorR_backward, ' Right Motor: ', motorL_backward, '\r'
 
-def forwardSpeedChanges(change, mn = 1200, mx = 1800):
+def forwardSpeedChanges(change, mn = 400, mx = 2300):
   global motorR_forward
   global motorL_forward
   motorR_forward += change
@@ -100,7 +100,7 @@ while True:
     global motorR_forward
     if ch == 'a':
       while ch == 'a':
-          forwardSpeedChanges(300)
+          forwardSpeedChanges(2000)
           forward()
           break
       motorR_forward = 0
@@ -108,7 +108,7 @@ while True:
       motorR_forward = 0
     elif ch == "d":
      while ch == 'd':
-         forwardSpeedChanges(-300)
+         forwardSpeedChanges(-2000)
          forward()
          break
      motorR_forward = 0
