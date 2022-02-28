@@ -28,8 +28,8 @@ except:
 ######################
 
 def forward():
-  RPL.servoWrite(motorL,motorL_forward)
-  RPL.servoWrite(motorR,motorR_forward)
+  RPL.servoWrite(motorR,motorL_forward)
+  RPL.servoWrite(motorL,motorR_forward)
 
 def reverse():
   RPL.servoWrite(motorL,motorL_backward)
