@@ -39,7 +39,7 @@ def print_speed():
   print '--FORWARD: Left Motor: ', motorL_forward, ' Right Motor: ', motorR_forward, '\r'
   print '  BACKWARD: Left Motor: ', motorR_backward, ' Right Motor: ', motorL_backward, '\r'
 
-def forwardSpeedChanges(change, mn = 1450, mx = 1550):
+def forwardSpeedChanges(change, mn = 1470, mx = 1530):
   global motorR_forward
   global motorL_forward
   motorR_forward += change
