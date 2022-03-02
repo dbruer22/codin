@@ -6,6 +6,8 @@ import sys, tty, termios, signal
 ######################
 ## Motor Establishment
 ######################
+timer = 0
+endpoint = 100
 
 motorL = 0
 motorR = 1
@@ -71,6 +73,13 @@ def stopAll():
     print "error except"
     pass
 
+def timer():
+    global endpoint
+    if ch == 'd':
+            for iteration in range(1,endpoint + 1):
+                #starts a sequence and counts up from 1 to 100
+                timer += iteration
+                print timer
 
 fd = sys.stdin.fileno() # I don't know what this does
 old_settings = termios.tcgetattr(fd) # this records the existing console settings that are later changed with the tty.setraw... line so that they can be replaced when the loop ends
@@ -102,6 +111,7 @@ while True:
       while ch == 'd':
           forwardSpeedChanges(100)
           forward()
+          timer()
           break
       motorR_forward = 0
     elif ch == "r":
