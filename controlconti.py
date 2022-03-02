@@ -98,16 +98,16 @@ while True:
     break # this ends the loop
   else:
     global motorR_forward
-    if ch == 'a':
-      while ch == 'a':
+    if ch == 'd':
+      while ch == 'd':
           forwardSpeedChanges(200)
           forward()
           break
       motorR_forward = 0
     elif ch == "r":
       motorR_forward = 0
-    elif ch == "d":
-     while ch == 'd':
+    elif ch == "a":
+     while ch == 'a':
          forwardSpeedChanges(-200)
          forward()
          break
