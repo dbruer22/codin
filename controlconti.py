@@ -77,10 +77,10 @@ def timer():
     global endpoint
     global timer
     if ch == 'd':
-            for iteration in range(1,endpoint + 1):
-                #starts a sequence and counts up from 1 to 100
-                timer += iteration
-                print timer
+        for iteration in range(1,endpoint + 1):
+            #starts a sequence and counts up from 1 to 100
+            timer += iteration
+            print timer
 
 fd = sys.stdin.fileno() # I don't know what this does
 old_settings = termios.tcgetattr(fd) # this records the existing console settings that are later changed with the tty.setraw... line so that they can be replaced when the loop ends
