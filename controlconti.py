@@ -75,6 +75,7 @@ def stopAll():
 
 def timer():
     global endpoint
+    global timer
     if ch == 'd':
             for iteration in range(1,endpoint + 1):
                 #starts a sequence and counts up from 1 to 100
